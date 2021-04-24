@@ -7,11 +7,11 @@ const { yParser } = require('@umijs/utils');
   const version = '1.0.0-beta.1';
 
   const pkgs = readdirSync(join(__dirname, '../packages')).filter(
-    pkg => pkg.charAt(0) !== '.',
+    (pkg) => pkg.charAt(0) !== '.',
   );
 
-  pkgs.forEach(shortName => {
-    const name = `@umijs/${shortName}`;
+  pkgs.forEach((shortName) => {
+    const name = `@rainbowfish/${shortName}`;
 
     const pkgJSONPath = join(
       __dirname,
@@ -61,7 +61,7 @@ const { yParser } = require('@umijs/utils');
           'main',
           'module',
           'description',
-        ].forEach(key => {
+        ].forEach((key) => {
           if (pkg[key]) json[key] = pkg[key];
         });
       }

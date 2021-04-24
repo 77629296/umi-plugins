@@ -1,0 +1,9 @@
+{
+  "name": "example",
+  "scripts": {
+    "build": "umi build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
