@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/umijs/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.2...@rainbowfish/umi-plugin-chunks@1.0.3) (2021-04-25)
+
+### Bug Fixes
+
+- 开发环境不分包 使用默认值 umi ([4741dbc](https://github.com/umijs/plugins/commit/4741dbcd86eb9936303251abd480c4c351309d80))
+
 ## [1.0.2](https://github.com/umijs/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.1...@rainbowfish/umi-plugin-chunks@1.0.2) (2021-04-25)
 
 ### Bug Fixes
