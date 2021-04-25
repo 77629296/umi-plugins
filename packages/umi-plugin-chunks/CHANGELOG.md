@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/77629296/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.3...@rainbowfish/umi-plugin-chunks@1.0.4) (2021-04-25)
+
+### Bug Fixes
+
+- 修改 git 仓库地址 ([bb2c022](https://github.com/77629296/plugins/commit/bb2c022cfc6fe98278c6ca655049cef8abe30a4b))
+
 ## [1.0.3](https://github.com/umijs/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.2...@rainbowfish/umi-plugin-chunks@1.0.3) (2021-04-25)
 
 ### Bug Fixes
