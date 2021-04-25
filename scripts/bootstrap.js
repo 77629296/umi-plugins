@@ -32,13 +32,13 @@ const { yParser } = require('@umijs/utils');
         files: ['lib', 'src'],
         repository: {
           type: 'git',
-          url: 'https://github.com/umijs/plugins',
+          url: 'https://github.com/77629296/plugins',
         },
         keywords: ['umi'],
-        authors: ['chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)'],
+        authors: ['spli <leesipeng@gmail.com> (https://github.com/77629296)'],
         license: 'MIT',
-        bugs: 'http://github.com/umijs/plugins/issues',
-        homepage: `https://github.com/umijs/plugins/tree/master/packages/${shortName}#readme`,
+        bugs: 'https://github.com/77629296/plugins/issues',
+        homepage: `https://github.com/77629296/plugins/tree/master/packages/${shortName}#readme`,
         peerDependencies: {
           umi: '3.x',
         },

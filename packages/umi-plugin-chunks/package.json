@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/plugins"
+    "url": "https://github.com/77629296/plugins"
   },
   "keywords": [
     "umi"
@@ -19,8 +19,8 @@
     "lsp <leesipeng@gmail.com> (https://github.com/77629296)"
   ],
   "license": "MIT",
-  "bugs": "http://github.com/umijs/plugins/issues",
-  "homepage": "https://github.com/umijs/plugins/tree/master/packages/plugin-chunks#readme",
+  "bugs": "https://github.com/77629296/plugins/issues",
+  "homepage": "https://github.com/77629296/plugins/tree/master/packages/plugin-chunks#readme",
   "peerDependencies": {
     "umi": "3.x"
   },
