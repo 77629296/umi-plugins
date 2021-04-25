@@ -1,5 +1,5 @@
 export default {
-  plugins: [require.resolve('../../plugin-chunks/lib')],
+  plugins: [require.resolve('../../umi-plugin-chunks/lib')],
 
-  chunks: [],
+  // chunks: false,
 };

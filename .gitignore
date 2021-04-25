@@ -1,5 +1,6 @@
 /coverage
 /packages/*/lib
+/packages/*/example/dist
 /packages/**/fixtures/**/dist
 node_modules
 .changelog
