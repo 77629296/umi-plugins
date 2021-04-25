@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/umijs/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.1...@rainbowfish/umi-plugin-chunks@1.0.2) (2021-04-25)
+
+### Bug Fixes
+
+- 修复 chunks 未配置或为空的情况 ([6dc60e3](https://github.com/umijs/plugins/commit/6dc60e3ebda83c3c7170ffdbfcf310dbe8cf8b51))
+
 ## [1.0.1](https://github.com/umijs/plugins/compare/@rainbowfish/umi-plugin-chunks@1.0.0-beta.3...@rainbowfish/umi-plugin-chunks@1.0.1) (2021-04-25)
 
 ### Bug Fixes
