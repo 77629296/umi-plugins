@@ -4,6 +4,12 @@ import { splitChunksByModuleArray } from './utils';
 export default (api: IApi) => {
   api.chainWebpack((config: any) => {
     let { chunks } = api.config;
+    const { NODE_ENV } = process.env;
+    // 开发环境不分包 使用默认值
+    if (NODE_ENV === 'development') {
+      api.config.chunks = ['umi'];
+      return;
+    }
     if (!chunks || (chunks && !chunks.length)) {
       return;
     }
