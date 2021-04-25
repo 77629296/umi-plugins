@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "bugs": "https://github.com/77629296/plugins/issues",
-  "homepage": "https://github.com/77629296/plugins/tree/master/packages/plugin-chunks#readme",
+  "homepage": "https://github.com/77629296/plugins/tree/master/packages/umi-plugin-chunks#readme",
   "peerDependencies": {
     "umi": "3.x"
   },
