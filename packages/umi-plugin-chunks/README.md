@@ -52,7 +52,10 @@ export default defineConfig({
    * 建议仅配置一下比较大的包，分包的目的是减少单个包体积，并发加载。
    * 如果分的太多反而影响加载速度
    */
-  chunks: ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design'],
+  chunks:
+    process.env.NODE_ENV === 'development'
+      ? ['umi']
+      : ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design'],
 });
 ```
 
@@ -65,7 +68,10 @@ export default defineConfig({
 ```js
 import { defineConfig } from 'umi';
 export default defineConfig({
-  chunks: ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design'],
+  chunks:
+    process.env.NODE_ENV === 'development'
+      ? ['umi']
+      : ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design'],
 });
 ```
 
@@ -83,7 +89,10 @@ export default defineConfig({
 import { defineConfig } from 'umi';
 export default defineConfig({
   // 增加入口 'umi'
-  chunks: ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design', 'umi'],
+  chunks:
+    process.env.NODE_ENV === 'development'
+      ? ['umi']
+      : ['rc-', '@sentry', '@umijs', 'lodash', 'antd', '@ant-design', 'umi'],
 });
 ```
 
@@ -92,3 +101,11 @@ export default defineConfig({
 刚开始配置时，遇到下图这样的报错，经过排查，是因为配置的`chunks`和`cacheGroups`中的配置不对应，像图中这个报错，就是`chunks`配置了`dva`，但是`cacheGroups`没有对应的处理，可见配置时需要一一对应，多个项目配置繁琐、易错，这也是开发这个插件的原因。😺
 
 ![](https://tva1.sinaimg.cn/large/008i3skNly1gpvx1e3h9tj31ya0tm4jv.jpg) ·
+
+### 使用插件正常，但是修改文件热更新后，会报错
+
+原因：umi 热更新时会取 chunks，需要区分开发环境下的配置
+
+```js
+chunks: process.env.NODE_ENV === 'development' ? ['umi'] : ['x', 'xx'];
+```
